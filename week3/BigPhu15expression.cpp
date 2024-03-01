@@ -11,70 +11,54 @@ float DoTask(int taskNum)
 	float a = 7.0; 
 	float b = 8.0; 
 	float c = 9.0;
-	float result = 0.0;
 
 	switch (taskNum)
 	{
 		case 1:
-			result = ++i + j--;
-			return result;
+			return ++i + j--;
+			break;
 		case 2:
-			result = --x + y++;
-			return result;
+			return --x + y++;
+			break;
 		case 3:
-			result = i++ + ++i;
-			return result;
+			return i++ + ++i;
 			break;
 		case 4:
-			result = --j + j--;
-			return result;
+			return --j + j--;
 			break;
 		case 5:
-			result = x-- - --x;
-			return result;
+			return x-- - --x;
 			break;
 		case 6:
-			result = ++y - y++;
-			return result;
+			return ++y - y++;
 			break;
 		case 7:
-			result = i++ + j++ + ++k;
-			return result;
+			return i++ + j++ + ++k;
 			break;
 		case 8:
-			result = --x - x-- - --y;
-			return result;
+			return --x - x-- - --y;
 			break;
 		case 9:
-			result = x++ * ++x;
-			return result;
+			return x++ * ++x;
 			break;
 		case 10:
-			result = y-- / --y;
-			return result;
+			return y-- / --y;
 			break;
 		case 11:
-			result = ++i - i++ + --j;
-			return result;
+			return ++i - i++ + --j;
 			break;
 		case 12:
-			result = --x * x++ + ++y;
-			return result;
+			return --x * x++ + ++y;
 			break;
 		case 13:
-			result = x++ + y-- - z++;
-			return result;
+			return x++ + y-- - z++;
 			break;
 		case 14:
-			result = ++a * --b / c++;
-			return result;
+			return ++a * --b / c++;
 			break;
 		case 15:
-			result = i-- + ++j - k-- ;
-			return result;
+			return i-- + ++j - k-- ;
 			break;
-		default:
-			std::cout << "Invalid taskNum!" << '\n';
 	}
 }
 
@@ -84,7 +68,7 @@ int main()
 	{
 		float result = DoTask(index);
 
-		std::cout << "Result #" << index << ": " << result << '\n';
+		std::cout << " #" << index << ": " << result << '\n';
 	}
 
 	return 0;
